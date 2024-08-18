@@ -65,7 +65,7 @@ Based on results of passing autotests, an Allure report is generated. Contents o
 - Check Google button is visible
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/icons/Jenkins.svg"> [Jenkins build]()
-[<img width="100%" title="Jenkins" src="media/img/Jenkins.PNG"/>]()
+[<img width="100%" title="Jenkins" src="media/img/Jenkins.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/)
 ### *Launch commands*
 
 ***Locally:***
@@ -149,4 +149,4 @@ After the build is completed, a special bot created in ```Telegram``` automatica
 
 ## :movie_camera: Test execution
 
-[<img width="60%" title="Test Run Gif" src="media/img/Mobile_test.gif">]()
+[<img width="50%" title="Test Run Gif" src="media/img/Mobile_test.gif">]()
