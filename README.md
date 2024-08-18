@@ -112,13 +112,13 @@ To start the build:
 After the build is completed the icons [<img width="2%" title="Allure" src="media/icons/Allure_Report.svg"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/) and [<img width="2%" title="Allure TestOps" src="media/icons/Allure_TO.svg"/>](https://allure.autotests.cloud/project/4389/dashboards) are displayed in ```Build History```.
 When clicking on the [<img width="2%" title="Allure" src="media/icons/Allure_Report.svg"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/) icon, a page with a generated html report and test documentation opens. When clicking on the [<img width="2%" title="Allure TestOps" src="media/icons/Allure_TO.svg"/>](https://allure.autotests.cloud/project/4389/dashboards) icon a project page in Allure TestOps opens.
 ### *Main report page*
-[<img width="100%" title="Main report page" src="media/img/Allure_main_report_page.PNG"/>]()
+[<img width="100%" title="Main report page" src="media/img/Allure_main_report_page.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/)
 
 ### *Test cases*
-[<img width="100%" title="Test cases" src="media/img/Allure_test_cases.PNG"/>]()
+[<img width="100%" title="Test cases" src="media/img/Allure_test_cases.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/#suites)
 
 ### *Graphs*
-[<img width="100%" title="Graphs" src="media/img/Allure_graphs.PNG"/>]()
+[<img width="100%" title="Graphs" src="media/img/Allure_graphs.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/#graph)
 
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/icons/Allure_TO.svg"> [Allure TestOps](https://allure.autotests.cloud/project/4389/dashboards)
 
@@ -126,11 +126,11 @@ When clicking on the [<img width="2%" title="Allure" src="media/icons/Allure_Rep
 
 ### *Dashboard*
 Summary information about the current testing status of the project:
-[<img width="100%" title="Dashboard" src="media/img/Allure_TO_dashboards.PNG"/>]()
+[<img width="100%" title="Dashboard" src="media/img/Allure_TO_dashboards.PNG"/>](https://allure.autotests.cloud/project/4389/dashboards)
 
 ### *Launches*
 This section displays test runs launched from Jenkins and Allure TestOps:
-[<img width="100%" title="Launches" src="media/img/Allure_TO_launches.PNG"/>]()
+[<img width="100%" title="Launches" src="media/img/Allure_TO_launches.PNG"/>](https://allure.autotests.cloud/project/4389/launches)
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/icons/Jira.svg"> [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1329)
 
