@@ -64,7 +64,7 @@ Based on results of passing autotests, an Allure report is generated. Contents o
 - Check Facebook button is visible
 - Check Google button is visible
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/icons/Jenkins.svg"> [Jenkins build]()
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/icons/Jenkins.svg"> [Jenkins build](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/)
 [<img width="100%" title="Jenkins" src="media/img/Jenkins.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/)
 ### *Launch commands*
 
