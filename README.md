@@ -1,4 +1,4 @@
-# Automation project for [Duolingo app](https://play.google.com/store/apps/details?id=com.duolingo&hl=ru) [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://www.duolingo.com/)
+# Automation project for [Duolingo app](https://play.google.com/store/apps/details?id=com.duolingo&hl=ru) [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://play.google.com/store/apps/details?id=com.duolingo&hl=ru)
 >With more than 500 million learners, Duolingo has the world's largest collection of language-learning data at its fingertips. This allows us to build unique systems, uncover new insights about the nature of language and learning, and apply existing theories at scales never before seen.
 
 ## :scroll: Table of contents
@@ -104,7 +104,10 @@ ${TASK}
 
 To start the build:
 1. Go to the build
-2. Click on ```Build```
+2. Click on ```Build with parameters```
+3. Select parameters
+4. Click on ```Build```
+
 
 ## <img width="4%" style="vertical-align:middle" title="Allure_Report" src="media/icons/Allure_Report.svg"> [Allure report](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/)
 After the build is completed the icons [<img width="2%" title="Allure" src="media/icons/Allure_Report.svg"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-duolingo_mobile_diplom/allure/) and [<img width="2%" title="Allure TestOps" src="media/icons/Allure_TO.svg"/>](https://allure.autotests.cloud/project/4389/dashboards) are displayed in ```Build History```.
