@@ -149,4 +149,4 @@ After the build is completed, a special bot created in ```Telegram``` automatica
 
 ## :movie_camera: Test execution
 
-[<img width="50%" title="Test Run Gif" src="media/img/Mobile_test.gif">]()
+[<img width="40%" title="Test Run Gif" src="media/img/Mobile_test.gif">]()
