@@ -1,4 +1,4 @@
-# Automation project for [Duolingo.com](https://www.duolingo.com/) [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://www.duolingo.com/)
+# Automation project for [Duolingo app](https://www.duolingo.com/) [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://www.duolingo.com/)
 >With more than 500 million learners, Duolingo has the world's largest collection of language-learning data at its fingertips. This allows us to build unique systems, uncover new insights about the nature of language and learning, and apply existing theories at scales never before seen.
 
 ## :scroll: Table of contents
