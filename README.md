@@ -47,9 +47,7 @@ Automated tests:
 
 Based on results of passing autotests, an Allure report is generated. Contents of the report:
 * Test steps
-* Screenshot of the page at the last step
 * Source code
-* Browser console logs
 * Test execution video
 
 ## :heavy_check_mark: Automated tests
