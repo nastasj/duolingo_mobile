@@ -14,6 +14,7 @@ public class ForgotPasswordScreen {
             emailInput = $(id("com.duolingo:id/emailInput")),
             sendEmailButton = $(id("com.duolingo:id/sendEmailButton")),
             quitButton = $(id("com.duolingo:id/quit"));
+
     LoginScreen loginScreen = new LoginScreen();
 
     @Step("Check tapping quitButton returns to login screen")
