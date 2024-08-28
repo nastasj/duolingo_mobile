@@ -1,13 +1,16 @@
 package tests;
 
-import config.AuthConfig;
+import com.github.javafaker.Faker;
+import config.DuolingoAuthConfig;
 import io.qameta.allure.Owner;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import com.github.javafaker.Faker;
-import screens.*;
+import screens.CheckEmailBottomsheet;
+import screens.ForgotPasswordScreen;
+import screens.LoginScreen;
+import screens.StartScreen;
 
 @Tag("mobile")
 @Tag("forgot")
@@ -21,15 +24,16 @@ public class ForgotPasswordTests extends TestBase {
     LoginScreen loginScreen = new LoginScreen();
     ForgotPasswordScreen forgotPasswordScreen = new ForgotPasswordScreen();
     CheckEmailBottomsheet checkEmailBottomsheet = new CheckEmailBottomsheet();
-    AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
+    DuolingoAuthConfig authConfig = ConfigFactory.create(DuolingoAuthConfig.class, System.getProperties());
 
     @Test
     @DisplayName("Check Forgot Password feature with correct email address sends email to user")
     void forgotPasswordWithCorrectEmailAddressTest() {
         startScreen.tapLoginButton();
         loginScreen.tapForgotPasswordButton();
-        forgotPasswordScreen.enterEmailInputAndTapSignInButton(authConfig.login());
-        checkEmailBottomsheet.checkBodyTitle();
+        forgotPasswordScreen.enterEmail(authConfig.login());
+        forgotPasswordScreen.tapSendEmailButton();
+        checkEmailBottomsheet.checkBodyTitle(authConfig.login());
         checkEmailBottomsheet.tapOkButton();
     }
 
@@ -38,7 +42,8 @@ public class ForgotPasswordTests extends TestBase {
     void forgotPasswordWithInvalidEmailAddressTest() {
         startScreen.tapLoginButton();
         loginScreen.tapForgotPasswordButton();
-        forgotPasswordScreen.enterEmailInputAndTapSignInButton(faker.name().firstName() + "@" + faker.name().lastName());
+        forgotPasswordScreen.enterEmail(faker.name().firstName() + "@" + faker.name().lastName());
+        forgotPasswordScreen.tapSendEmailButton();
         checkEmailBottomsheet.checkErrorMessage();
     }
 

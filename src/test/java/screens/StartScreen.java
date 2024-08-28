@@ -8,7 +8,7 @@ import static io.appium.java_client.AppiumBy.id;
 
 public class StartScreen {
 
-    private static final SelenideElement
+    private final SelenideElement
 
             loginButton = $(id("com.duolingo:id/introFlowLoginButton"));
 

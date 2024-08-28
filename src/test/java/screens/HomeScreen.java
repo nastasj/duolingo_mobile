@@ -11,15 +11,13 @@ import static io.appium.java_client.AppiumBy.id;
 
 public class HomeScreen {
 
-    private static final SelenideElement
+    private final SelenideElement
 
-            path = $(id("com.duolingo:id/path")),
-            guidebookButton = $(id("com.duolingo:id/guidebook"));
+            primaryButton = $(id("com.duolingo:id/primaryButton"));
 
-    @Step("Check Guidebook button is visible")
-    public HomeScreen checkGuidebookButtonIsVisible() {
-        path.shouldBe(visible, Duration.ofSeconds(15)).click();
-        guidebookButton.shouldBe(visible, Duration.ofSeconds(15));
+    @Step("Check Primary button is visible")
+    public HomeScreen checkPrimaryButtonIsVisible() {
+        primaryButton.shouldBe(visible, Duration.ofSeconds(15));
         return this;
     }
 }

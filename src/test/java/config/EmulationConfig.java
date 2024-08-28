@@ -9,8 +9,6 @@ import org.aeonbits.owner.Config;
 
 public interface EmulationConfig extends Config {
 
-    String appUrl();
-
     String appiumUrl();
 
     String appPackage();
@@ -20,8 +18,6 @@ public interface EmulationConfig extends Config {
     String platformVersion();
 
     String deviceName();
-
-    String automationName();
 }
 
 

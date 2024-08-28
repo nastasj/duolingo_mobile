@@ -1,9 +1,7 @@
 package screens;
 
 import com.codeborne.selenide.SelenideElement;
-import config.AuthConfig;
 import io.qameta.allure.Step;
-import org.aeonbits.owner.ConfigFactory;
 
 import java.time.Duration;
 
@@ -12,12 +10,9 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 
-
 public class LoginScreen {
 
-    AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
-
-    private static final SelenideElement
+    private final SelenideElement
 
             loginInput = $(id("com.duolingo:id/loginView")),
             passwordInput = $(id("com.duolingo:id/passwordView")),
@@ -32,12 +27,22 @@ public class LoginScreen {
         return this;
     }
 
-    @Step("Enter auth inputs and tap Sign in button")
-    public LoginScreen enterAuthInputsAndTapSignInButton() {
+    @Step("Enter login")
+    public LoginScreen enterLogin(String login) {
         loginInput.click();
-        loginInput.sendKeys(authConfig.login());
+        loginInput.sendKeys(login);
+        return this;
+    }
+
+    @Step("Enter password")
+    public LoginScreen enterPassword(String password) {
         passwordInput.click();
-        passwordInput.sendKeys(authConfig.password());
+        passwordInput.sendKeys(password);
+        return this;
+    }
+
+    @Step("Tap Sign in button")
+    public LoginScreen tapSignInButton() {
         signInButton.click();
         return this;
     }

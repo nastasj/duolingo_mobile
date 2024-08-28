@@ -20,6 +20,14 @@ public class RealDeviceDriver implements WebDriverProvider {
 
     static RealDeviceConfig realDeviceConfig = ConfigFactory.create(RealDeviceConfig.class, System.getProperties());
 
+    public static URL getAppiumServerUrl() {
+        try {
+            return new URL(realDeviceConfig.appiumUrl());
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {
@@ -37,14 +45,6 @@ public class RealDeviceDriver implements WebDriverProvider {
         AndroidDriver driver = new AndroidDriver(getAppiumServerUrl(), options);
 
         return driver;
-    }
-
-    public static URL getAppiumServerUrl() {
-        try {
-            return new URL(realDeviceConfig.appiumUrl());
-        } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     private String getAppPath() {

@@ -1,7 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.AuthConfig;
+import config.BrowserStackAuthConfig;
 import config.BrowserStackConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
@@ -15,8 +15,8 @@ import java.net.URL;
 
 public class BrowserStackDriver implements WebDriverProvider {
 
-    public AuthConfig authConfig = ConfigFactory.create(AuthConfig.class);
     private static final BrowserStackConfig config = ConfigFactory.create(BrowserStackConfig.class);
+    public BrowserStackAuthConfig authConfig = ConfigFactory.create(BrowserStackAuthConfig.class);
 
     @Nonnull
     @Override
